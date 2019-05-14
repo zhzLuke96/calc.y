@@ -55,6 +55,7 @@ number: DIGIT                       { $$ = $1 }
 
 string: LETTER						{ $$ = string($1) }
 	|	string LETTER				{ $$ = $1 + string($2) }
+	|	string number				{ $$ = $1 + string($2 + '0') }
 	;
 
 %%      /*  start  of  programs  */

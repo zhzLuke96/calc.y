@@ -7,11 +7,11 @@ goyacc example.
 # fif_calc.y
 input
 ```
-a  + 9 * ( c / g + 1)
+a1  + 9 * ( c2 / g3 + 1)
 ```
 output
 ```
-'a' load 9 'c' load 'g' load div 1 add mul add
+'a1' load 9 'c2' load 'g3' load div 1 add mul add
 ```
 
 input
